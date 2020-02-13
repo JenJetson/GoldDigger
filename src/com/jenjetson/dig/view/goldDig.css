@@ -1,0 +1,59 @@
+/* ID's used with regular .java files have a .dot
+*  ID's assigned with FXML have a #
+*/
+.grassBottom{
+  -fx-background-color: rgba(0, 0, 0, 0.5); //RGB code for transparent color;
+  }
+
+.stackPane{
+    -fx-background-color: white;
+    }
+
+.grassMiss{
+   /* -fx-background-image:url('file:/C:/Users/Kari/IdeaProjects/GoldDigger/src/com/jenjetson/dig/view/soil.jpg' ); */
+}
+.grassHit{
+   -fx-background-image:url('file:/C:/Users/Kari/IdeaProjects/GoldDigger/src/com/jenjetson/dig/view/gold-bar.jpg' );
+}
+.grassVirgin{
+      -fx-background-color: transparent;
+}
+.grassVirgin:hover{
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 3px, 3px, 2px, 1px;
+    -fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em; /* 4 8 4 8 */
+    -fx-text-fill: -fx-text-base-color;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT;
+}
+
+
+.gridPaneMain{
+    -fx-font-size: 23px;
+    -fx-hgap: 5;
+    -fx-vgap: 5;
+    -fx-background-image:url('file:/C:/Users/Kari/IdeaProjects/GoldDigger/src/com/jenjetson/dig/view/grass.jpeg' );
+    -fx-alignment:center;
+}
+
+#topBox{
+    -fx-background-color:white;
+    -fx-font-size: 12px;
+}
+
+/* not using right now */
+#gridLabel{
+   -fx-text-fill: #f59e07;/* font color */
+   -fx-font-family: arial; /* not being used */
+   -fx-border-width: 1;
+   -fx-border-color: #f59e07;
+   -fx-border-style: dotted;
+   -fx-background-color: rgba(0, 0, 0, 0.5); //RGB code for transparent color
+}
+
+#gridLabelBottom{
+    -fx-text-fill: rgba(0, 0, 0, 0.5); /* clear font color because background image gone if no text */
+    -fx-background-image:url('file:/C:/Users/Kari/IdeaProjects/GoldDigger/src/com/jenjetson/dig/view/soil2.jpg' );
+     -fx-font-size: 32px;
+}
