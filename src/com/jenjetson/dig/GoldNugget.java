@@ -5,10 +5,7 @@ public class GoldNugget {
 
     public GoldNugget(int nuggetSize) {
         this.nuggetSize = nuggetSize;
-
-
     }
-
 
 
 

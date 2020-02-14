@@ -5,6 +5,7 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 import sun.audio.AudioPlayer;
 import sun.audio.AudioStream;
@@ -17,6 +18,7 @@ public class GameRoot {
     public GameRoot(Stage stage){
         Stage primaryStage = new Stage();
         BorderPane rootLayout = new BorderPane();
+        HBox infoBoard = new HBox();
         try{
             //play intro sound
             startSound();
@@ -30,16 +32,27 @@ public class GameRoot {
             //set/get fxml file
             loader.setLocation(Main.class.getResource("view/topMenu.fxml"));
 
+            //assign FXML file to rootlayout
             rootLayout = (BorderPane) loader.load();
+
+            //Create FXML loader
+            loader = new FXMLLoader();
+            //set/get fxml file
+            loader.setLocation(Main.class.getResource("view/gameInfoBoard.fxml"));
+
+            infoBoard = (HBox) loader.load();
+
 
             //create a gridPane to pass to board class
             GridPane gridPane = new GridPane();
 
-            //Pass gridPane to create board object
+            //Create GameBoard object and pass the gridPane
             GameBoard board = new GameBoard(gridPane);
 
             //put the gridPane in the center of the BorderPane
             rootLayout.setCenter(gridPane);
+            //put the infoBard on the top of window
+            rootLayout.setTop(infoBoard);
 
             //Create a Scene called mainScene and put the rootLayout in it.
             Scene mainScene = new Scene(rootLayout);
@@ -57,7 +70,7 @@ public class GameRoot {
 
     }
 
-    public void startSound() throws IOException { //this requires an absolute path
+    public static void startSound() throws IOException { //this requires an absolute path
         String absolutePath = "C:\\Users\\Kari\\IdeaProjects\\Dig for Gold\\src\\com\\jenjetson\\view\\media\\BIP.WAV";
         InputStream is = new FileInputStream(absolutePath);
 

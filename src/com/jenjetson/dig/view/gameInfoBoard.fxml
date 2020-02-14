@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox id="infoBoard" alignment="BOTTOM_RIGHT" prefHeight="70.0" prefWidth="555.0" spacing="15.0"
+      xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.jenjetson.dig.GameInfoBoardControl">
+   <padding><Insets bottom="10" right="10" /></padding>
+   <children>
+      <Label id="gameBoardLabel" text="Total Gold" />
+      <Label id="gameBoardLabel" fx:id="score" minWidth="50" />
+      <Label id="gameBoardLabel" text="Number digs left:" />
+      <Label id="gameBoardLabel" fx:id="numDigs" minWidth="50" />
+      <Button id="gameBoardButton" text="New Game" />
+   </children>
+   <stylesheets>
+      <URL value="@goldDig.css" />
+   </stylesheets>
+</HBox>
