@@ -1,7 +1,7 @@
 /* ID's used with regular .java files have a .dot
 *  ID's assigned with FXML have a #
 */
-#infoBoard{
+.scoreBoard{
     -fx-background-color: lightgrey;
     -fx-font-size: 16px;
 }
@@ -46,7 +46,8 @@
     -fx-font-size: 23px;
     -fx-hgap: 2;
     -fx-vgap: 2;
-    -fx-background-image:url('file:/C:/Users/Kari/IdeaProjects/GoldDigger/src/com/jenjetson/dig/view/grass.jpeg' );
+    /*-fx-background-image:url('file:/C:/Users/Kari/IdeaProjects/GoldDigger/src/com/jenjetson/dig/view/grass.jpeg' );
+    */
     -fx-alignment:center;
     -fx-font-color:orange;
 }
@@ -71,8 +72,10 @@
     -fx-background-image:url('file:/C:/Users/Kari/IdeaProjects/GoldDigger/src/com/jenjetson/dig/view/soil2.jpg' );
      -fx-font-size: 32px;
 }
-#infoBoard{
+#infoboard{
     -fx-border-width: 4;
     -fx-border-color: darkorange;
     -fx-border-style: solid;
+     -fx-background-color: lightgrey;
+        -fx-font-size: 16px;
 }

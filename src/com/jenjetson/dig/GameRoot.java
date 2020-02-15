@@ -1,3 +1,4 @@
+
 package com.jenjetson.dig;
 
 import javafx.fxml.FXMLLoader;
@@ -15,7 +16,7 @@ import java.io.InputStream;
 
 public class GameRoot {
 
-    public GameRoot(Stage stage){
+    public GameRoot(){
         Stage primaryStage = new Stage();
         BorderPane rootLayout = new BorderPane();
         HBox infoBoard = new HBox();

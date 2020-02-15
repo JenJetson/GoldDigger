@@ -1,17 +1,20 @@
 /* ID's used with regular .java files have a .dot
 *  ID's assigned with FXML have a #
 */
+.scoreBoard{
+    -fx-background-color: lightgrey;
+    -fx-font-size: 16px;
+}
+#gameBoardButton{}
+#gameBoardLabel{}
+
+
 .grassBottom{
   -fx-background-color: blue;
--fx-background-radius: 4px;
+  -fx-background-image: none;
   /*-fx-text-fill: transparent/* font color */
   /*-fx-background-image:url('file:/C:/Users/Kari/IdeaProjects/GoldDigger/src/com/jenjetson/dig/view/soil.jpg' );*/
  }
-
-.stackPane{
-
-   /* -fx-background-image:url('file:/C:/Users/Kari/IdeaProjects/GoldDigger/src/com/jenjetson/dig/view/soil.jpg' );
-   */ }
 
 .grassMiss{
    -fx-background-image:url('file:/C:/Users/Kari/IdeaProjects/GoldDigger/src/com/jenjetson/dig/view/soil.jpg' );
@@ -20,14 +23,16 @@
    -fx-background-image:url('file:/C:/Users/Kari/IdeaProjects/GoldDigger/src/com/jenjetson/dig/view/gold-bar.jpg' );
 }
 .grassVirgin{
--fx-background-radius: 4px;
--fx-background-image:url('file:/C:/Users/Kari/IdeaProjects/GoldDigger/src/com/jenjetson/dig/view/soil.jpg' );
-      /* -fx-background-color: green; */
-       /* -fx-opacity: 0.7; */
+    -fx-background-radius: 4px;
+    -fx-background-color: green;
+    -fx-opacity: 0.8;
 }
 .grassVirgin:hover{
 
-    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+/* use the next line for a key */
+/* -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color; */
+    -fx-background-color: -fx-shadow-highlight-color, darkorange, -fx-inner-border, orange;
+
     -fx-background-insets: 0 0 -1 0, 0, 1, 2;
     -fx-background-radius: 4px;
     -fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em; /* 4 8 4 8 */
@@ -41,7 +46,8 @@
     -fx-font-size: 23px;
     -fx-hgap: 2;
     -fx-vgap: 2;
-    -fx-background-image:url('file:/C:/Users/Kari/IdeaProjects/GoldDigger/src/com/jenjetson/dig/view/grass.jpeg' );
+    /*-fx-background-image:url('file:/C:/Users/Kari/IdeaProjects/GoldDigger/src/com/jenjetson/dig/view/grass.jpeg' );
+    */
     -fx-alignment:center;
     -fx-font-color:orange;
 }
@@ -65,4 +71,11 @@
     -fx-text-fill: rgba(0, 0, 0, 0.5); /* clear font color because background image gone if no text */
     -fx-background-image:url('file:/C:/Users/Kari/IdeaProjects/GoldDigger/src/com/jenjetson/dig/view/soil2.jpg' );
      -fx-font-size: 32px;
+}
+#infoboard{
+    -fx-border-width: 4;
+    -fx-border-color: darkorange;
+    -fx-border-style: solid;
+     -fx-background-color: lightgrey;
+        -fx-font-size: 16px;
 }
